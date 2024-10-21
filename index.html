@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mini Book App</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="page-banner">
+                <h1>Mini Book App</h1>
+                <h3>Books For Me</h3>
+                <a href="facebook.com">facebook</a>
+                <form action="" id="search-books">
+                    <input type="text" placeholder="Search books...">
+                </form>
+            </div>
+        </header>
+        <section id="book-list" class="first-section">
+                <h3>Books To Read</h3>
+                <ul>
+                    <li>
+                        <span class="title">The Wise Man's fear</span>
+                        <span class="delete-btn">delete</span>
+                    </li>
+                    <li>
+                        <span class="title">Kafka on the shore</span>
+                        <span class="delete-btn">delete</span>
+                    </li>
+                    <li>
+                        <span class="title">The Master and the Magarita</span>
+                        <span class="delete-btn">delete</span>
+                    </li>
+                    <li>
+                        <span class="title">test</span>
+                        <span class="delete-btn">delete</span>
+                    </li>
+                </ul>
+        </section>
+        <section id="second-section">
+            <form action="" id="add-books">
+                <input type="checkbox" name="" id="hide">
+                <label for="hide">Hide all books</label>
+                <input type="text">
+                <button class="add-btn">Add</button>
+            </form>
+
+        </section>
+        <div id="tabbed-content">
+            <ul class="tabs">
+                <li data-target="#about" class="active">About</li>
+                <li data-target="#contact">Contact</li>
+            </ul>
+            <div class="panel active" id="about">
+                <p>content for about tab...</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, fuga voluptates ipsam eaque velit qui vero odio porro id nihil repellendus ratione, debitis officia necessitatibus, facilis architecto illum? Non veniam nam maxime nobis veritatis totam sed repudiandae dignissimos error illo!</p>
+            </div>
+            <div class="panel" id="contact">
+                <p>content for contact tab...</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, fuga voluptates ipsam eaque velit qui vero odio porro id nihil repellendus ratione, debitis officia necessitatibus, facilis architecto illum? Non veniam nam maxime nobis veritatis totam sed repudiandae dignissimos error illo!</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

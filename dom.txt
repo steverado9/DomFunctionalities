@@ -1,0 +1,89 @@
+DOM- Document object model.
+The DOM defines a standard for accessing documents.
+The HTML DOM is a standard for interacting with HTML elements.
+
+How to access/get/query elements in the DOM
+1)document: This is used to access the whole elements in the dom.
+2)document.getElementById: This is used to access elements in the Dom by their 'ID'.
+3)document.getElementByClassName: accessing elements by their 'class' and this returns an HTML COLLECTION.
+4)document.getElementByTagName: accessing elements by their 'tagName'. also returns an HTML COLLECTION.
+5)document.querySelector: accessing a particular (one) element using it's css selector(id,class etc).
+6)document.querySelectorAll: accessing several(Many) elements using it's css selector. returns a NODELIST
+7)document.forms: returns an html collection of forms in the document. 
+-you can use bracket notation [] to select the form you want or the ID.
+HTML COLLECTIONS
+This is a collection of html document element.
+This is not an array but behaves as an array. 
+-you can access elements using the square bracket[] notation.
+-You can also loop through an html collection using the traditional for loop.
+-Array.isArray(variable): This used to check if a variable is an array.
+-Array.from(variable): converts an HTML Colletion to an array.
+NODELIST
+This is a collection of document nodeList eg elements, attributes, text.
+Evertyhing in an html document is a node.
+This is also not an array but looks like an array.
+-you can access elements using the square bracket[] notation.
+-You can also loop through an html collection using the traditional for loop.
+-You can also use a forEach method on a nodeList.
+
+CREATING ELEMENTS AND APPENDING IT TO THE DOM
+document.createElement(): This is method is used to create element.
+appendChild(): The appendChild() method appends a node (element) as the last child of an element.
+textContent: return the text in an element.
+innerHTML: returns the elements and text of an element. it can be used to append new elements.
+
+ATTRIBUTES
+getAttribute(): This is used to check/get attribute of an element.
+setAttribute(): This is used to change the attribute of an element.
+removeAttribute(): This is used to remove an attribute
+
+DOM NODES
+Evertyhing in the html document is a node.
+Elements are a type of node.
+Attributes are a type of node, comments, texts etc.
+-nodeType: returns a number and the number is used to know the type of node.
+-nodeName: returns the name of the element.
+-cloneNode: creates a copy of a node and returns the copy.
+Set the deep parameter to true if you also want to clone descendants (children).
+
+Transvering the DOM(Moving in the dom)
+-parentNode: returns the parent node of an element or node.
+-parentElement: returns the parent element of an element.
+-childNodes: returns the child nodes of an element or node.
+-children: returns the children of an element or node.
+-nextSibling: retuns the next sibling node of an element.
+-nextElementSibling: returns the next Element Sibling of an element.
+-previousSibling: returns the previous node of an element.
+-previousElementSibling: returns the previous Element of an element.
+
+Events
+-addEventListener: This attaches an event handler to an event. the event handler is the function
+-e: this is the event itself
+-e.target: tells you the particular element you are targetting.
+preventDefault: This cancels out the default event/behaviour.
+parent.removechild(childName): This is used to delete in javascript.
+
+Event Bubbling
+Event bubbling directs an event to its target. It works like this:
+When an element (like a button) is clicked, an event is directed to the element.
+If an event handler is set for the element, the event handler is triggered.
+Then the event "bubbles up" to the elements parent.
+If an event handler is set for the parent, this event handler is triggered.
+The event continues to bubble, until it reaches the top (the document element).
+
+CheckBox Events
+Change events are used for checkboxes, radio buttons because they are changing state.
+
+DOM content loaded Event
+The dom will finish loading before it loads any event
+check netninja videos
+
+
+
+
+
+
+
+
+
+
